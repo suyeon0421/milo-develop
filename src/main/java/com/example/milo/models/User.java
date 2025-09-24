@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.cglib.core.Local;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "users")
@@ -16,4 +19,6 @@ public class User {
     private String email;
     private String password;
     private String user_name;
+    private LocalDateTime created_at;
+    private LocalDateTime deleted_at;
 }

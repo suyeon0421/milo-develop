@@ -16,14 +16,6 @@ public class WalkLogPoint {
     private Integer point_id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private User user;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "pet_id")
-    private Pet pet;
-
-    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "log_id")
     private WalkLog walkLog;
 
